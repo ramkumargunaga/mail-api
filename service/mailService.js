@@ -3,15 +3,15 @@ const nodemailer = require('nodemailer')
 let transporter = nodemailer.createTransport({
     service:"Gmail",
     auth:{
-        user:"ramkumarparameshwargunaga@gmail.com",
-        pass:"qqmcmabzjumqtvjw"
+        user:"email",
+        pass:"app_password"
     }
 })
 
 let draftMail = async (name, email, query, mobileNo)=>
 {
     let mailOptions={
-        from:"ramkumarparameshwargunaga@gmail.com",
+        from:"email",
         to:email,
         subject:"Query mail",
         html:`<h3>Hi team,</h3> <br/>
